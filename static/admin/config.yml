@@ -7,7 +7,8 @@ public_folder: /images
 
 collections:
   - name: posts
-    label: Blog
+    label: Posts
+    label_singular: Post
     folder: static/posts
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
