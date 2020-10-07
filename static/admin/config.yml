@@ -5,6 +5,12 @@ backend:
 media_folder: static/images
 public_folder: /images
 
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: niama
+    api_key: 586544416139756
+
 collections:
   - name: posts
     label: Posts
