@@ -4,7 +4,7 @@ const config = {
     content: ['./src/**/*.{html,js,svelte,ts}'],
     safelist: [
       ...['bg-purple-300', 'hover:bg-purple-400', 'bg-red-300', 'hover:bg-red-400', 'bg-yellow-300', 'hover:bg-yellow-400'],
-      ...['text-purple-300', 'text-red-300', 'text-yellow-300'],
+      ...['text-purple-300', 'text-purple-400', 'text-red-300', 'text-red-400', 'text-yellow-300', 'text-yellow-400'],
     ],
   },
   theme: {

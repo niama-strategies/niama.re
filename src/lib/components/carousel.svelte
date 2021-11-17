@@ -1,6 +1,6 @@
 <div class={elC}>
   <ul class="relative flex">
-    {#each ['left', 'right'] as dir, i}<div class="absolute" style={extraS(dir, i)}><slot name="item" item={extra[i]} /></div>{/each}
+    {#each ['left', 'right'] as dir, i}<li class="absolute" style={extraS(dir, i)}><slot name="item" item={extra[i]} /></li>{/each}
     {#each items as item, index (item.type)}<li style={itemS} animate:flip><slot name="item" {item} {index} /></li>{/each}
   </ul>
   <div class="{effectC} left-0 bg-gradient-to-r" />
