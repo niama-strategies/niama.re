@@ -36,7 +36,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"imagetools-core": "^3.0.0",
-		"vanilla-lazyload": "^17.5.0"
+		"imagetools-core": "^3.0.0"
 	}
 }
