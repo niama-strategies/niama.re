@@ -1,7 +1,7 @@
 {
     "name": "n\u00edama stratégies",
     "short_name": "n\u00edama",
-    "start_url": "/index.html",
+    "start_url": "/",
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
     "display": "standalone",
