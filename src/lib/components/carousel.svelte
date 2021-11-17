@@ -1,11 +1,7 @@
-<div class={elC}>
-  <ul class="relative flex">
-    {#each ['left', 'right'] as dir, i}<li class="absolute" style={extraS(dir, i)}><slot name="item" item={extra[i]} /></li>{/each}
-    {#each items as item, index (item.type)}<li style={itemS} animate:flip><slot name="item" {item} {index} /></li>{/each}
-  </ul>
-  <div class="{effectC} left-0 bg-gradient-to-r" />
-  <div class="{effectC} right-0 bg-gradient-to-l" />
-</div>
+<ul class="relative flex {elC}">
+  {#each ['left', 'right'] as dir, i}<li class="absolute" style={extraS(dir, i)}><slot name="item" item={extra[i]} /></li>{/each}
+  {#each items as item, index (item.type)}<li style={itemS} animate:flip><slot name="item" {item} {index} /></li>{/each}
+</ul>
 
 <script lang="ts">
   import {quadInOut} from 'svelte/easing';
@@ -24,7 +20,6 @@
   // STYLES ================================================================================================================================
   $: extraS = (dir: string, i: number) => `${dir}:${gap}px;opacity:${showExtra[i] ? 1 : 0};transform: translateX(${$flyExtra[i]}px)`;
   $: itemS = `flex: none;margin: 0 ${gap}px`;
-  $: effectC = `hidden fixed inset-y-0 w-[calc(40vw-160px)] from-white to-transparent pointer-events-none`;
 
   // VARS ==================================================================================================================================
   let extra = [items[0], items[items.length - 1]];

@@ -1,5 +1,5 @@
 <Picture cover alt="Fond níama strategies" {...bg} class="absolute inset-0" />
-<div class="flex items-center justify-center min-h-screen">
+<div class="flex items-center justify-center min-h-screen overflow-hidden">
   <slot />
 </div>
 
