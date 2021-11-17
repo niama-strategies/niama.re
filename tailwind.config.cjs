@@ -10,9 +10,9 @@ const config = {
   theme: {
     extend: {
       colors: {
-        purple: {300: '#ba93dc', 400: '#9c78bf'},
+        purple: {300: '#ba93dc', 400: '#8c63b6'},
         red: {300: '#f04e69', 400: '#bc1142'},
-        yellow: {300: '#fedf00', 400: '#e2c500'},
+        yellow: {300: '#fedf00', 400: '#897600'},
       },
       fontFamily: {title: 'TexGyreAdventor'},
     },
