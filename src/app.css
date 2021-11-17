@@ -1,0 +1,22 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'TexGyreAdventor';
+    src: url(/fonts/texgyreadventor-regular-webfont.woff2) format('woff2'), url(/fonts/texgyreadventor-regular-webfont.woff) format('woff');
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'TexGyreAdventor';
+    src: url(/fonts/texgyreadventor-bold-webfont.woff2) format('woff2'), url(/fonts/texgyreadventor-bold-webfont.woff) format('woff');
+    font-weight: 700;
+  }
+
+  html {
+    @apply overflow-x-hidden;
+  }
+}

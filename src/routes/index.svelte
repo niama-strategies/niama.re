@@ -1,5 +1,5 @@
-<svelte:head>
-	<title>Accueil - NIAMA</title>
-</svelte:head>
+<DomainList />
 
-<h1>Bienvenue</h1>
+<script lang="ts">
+  import {DomainList} from '$lib/components';
+</script>

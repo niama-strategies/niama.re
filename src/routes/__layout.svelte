@@ -1,0 +1,10 @@
+<Picture cover alt="Fond níama strategies" {...bg} class="absolute inset-0" />
+<div class="flex items-center justify-center min-h-screen">
+  <slot />
+</div>
+
+<script lang="ts">
+  import bg from '$lib/assets/images/bg.png?bg';
+  import {Picture} from '$lib/components';
+  import '../app.css';
+</script>
