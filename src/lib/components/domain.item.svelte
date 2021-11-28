@@ -1,9 +1,9 @@
 <div class="w-80 {elC}" {...elA}>
   <div class="relative w-full h-full" {...innerA}>
-    <div class="{cardC} justify-center" style="backface-visibility:hidden">
+    <div class="{cardC} justify-center" style="-webkit-backface-visibility: hidden;backface-visibility:hidden">
       <Picture alt="logo de níama stratégies" {...strategies} class="w-64 h-64" />
     </div>
-    <div class={cardC} style="transform:rotateY(180deg);backface-visibility:hidden">
+    <div class={cardC} style="transform:rotateY(180deg);-webkit-backface-visibility: hidden;backface-visibility:hidden">
       <Picture {...image} class="w-64 h-64" />
       <p class="mt-8 text-center">{@html content}</p>
       <ul class="w-full p-4 mt-4 bg-gray-100 rounded-lg">
@@ -51,7 +51,7 @@
   const A2 = tweened(intro ? 320 : 544, {duration: 700, easing: quadInOut});
 
   $: elA = {style: `height:${$A2}px;perspective:1000px;transform: translateX(${$A0 * (index - 1)}%)`};
-  $: innerA = {style: `transform-style: preserve-3d;transform: rotateY(${$A1}deg)`};
+  $: innerA = {style: `-webkit-transform-style: preserve-3d;transform-style: preserve-3d;transform: rotateY(${$A1}deg)`};
 
   // LIFECYCLE =============================================================================================================================
   onMount(async () => {
